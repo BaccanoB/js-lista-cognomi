@@ -15,7 +15,10 @@ console.log(listaCognomi);
 
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 
+var posizione;
 for (var i = 0; i <listaCognomi.length; i++) {
-    console.log(i + 1 + " " + listaCognomi[i]);
+    posizione = i + 1 + " " + listaCognomi[i]
+    console.log(posizione);
+    document.getElementById("lista").innerHTML += "<li>" + posizione + "</li>";
 }
 
